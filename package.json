@@ -1,0 +1,9 @@
+{
+  "name": "nev-manga",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Portail neV.MANGA — application Node dynamique",
+  "engines": { "node": ">=22" },
+  "scripts": { "start": "node server.js" }
+}

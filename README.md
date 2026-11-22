@@ -15,19 +15,22 @@ Portail éditorial et espace de consultation du studio indépendant neV.MANGA.
 - Navigation responsive, menu mobile, page 404, sitemap et manifeste web.
 
 ## Architecture technique
-- `index.html` : structure du portail.
-- `styles.css` : identité graphique et responsive design.
-- `app.js` : navigation, recherche, fiches, onglets et brouillons locaux.
-- `content.js` : données éditoriales structurées de PROJECT: BEYOND.
-- `404.html`, `robots.txt`, `sitemap.xml`, `manifest.webmanifest` : fichiers de support du site.
+Application **dynamique** (serveur Node.js sans dépendance externe) :
+- `server.js` : serveur HTTP, API `/api/content` et `/api/health`, génération de `/content.js`, `/robots.txt` et `/sitemap.xml` selon l'adresse du site.
+- `data/content.json` : données éditoriales structurées de PROJECT: BEYOND (modifiables sans toucher à l'interface).
+- `index.html`, `styles.css`, `app.js` : interface du portail (navigation, recherche, fiches, onglets).
+- `404.html`, `manifest.webmanifest` : pages et fichiers de support.
 
 ## Lancer en local
-Ouvrir `index.html` dans un navigateur moderne ou servir le dossier avec un serveur statique.
+```bash
+npm start   # http://localhost:3000
+```
 
-## Limites et prochaines intégrations
-Le portail est actuellement un site statique. Les brouillons de l’espace Studio sont conservés uniquement dans le stockage local du navigateur : ils ne sont ni sécurisés comme un espace administrateur, ni synchronisés entre appareils. Les comptes, rôles, base de données, téléversement partagé, publication de chapitres et administration multi-utilisateur nécessitent un backend et une authentification sécurisée à configurer séparément.
+## Hébergement
+Service web Render (Node) : commande de démarrage `npm start`, test de santé `/api/health`.
 
-Les portraits et planches originales ne sont pas remplacés par des images inventées. Les emplacements visuels restent en attente des illustrations fournies et validées. Aucun chapitre finalisé n’est présenté comme publié.
+## Prochaines intégrations
+Les brouillons de l'espace Studio restent dans le stockage local du navigateur : ils ne sont ni sécurisés comme un espace administrateur, ni synchronisés entre appareils. Les comptes (neV.ID), rôles, base de données, téléversement partagé et publication de chapitres sont à brancher ensuite. Les portraits et planches originales ne sont pas remplacés par des images inventées. Aucun chapitre finalisé n'est présenté comme publié.
 
 ## Références éditoriales intégrées
 - PROJECT: BEYOND — Dossier de référence UNIVERS V1.1.
