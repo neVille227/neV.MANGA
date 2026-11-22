@@ -26,12 +26,12 @@ window.NEV_MANGA_DATA = {
     {name:"Solméra",capital:"Méridia",identity:"République maritime décentralisée, structurée autour d’une péninsule et d’archipels.",centres:"Nymara · Calyren",regions:"Méridia · Nym · Orvane · Sépulcre · Calyra",note:"Les conseils régionaux et les institutions maritimes participent à la gouvernance."}
   ],
   sagas: [
-    {name:"Saga I",arcs:1,summary:"Contenu détaillé à intégrer depuis le découpage narratif de référence."},
-    {name:"Saga II",arcs:2,summary:"Contenu détaillé à intégrer depuis le découpage narratif de référence."},
-    {name:"Saga III",arcs:3,summary:"Contenu détaillé à intégrer depuis le découpage narratif de référence."},
-    {name:"Saga IV",arcs:4,summary:"Contenu détaillé à intégrer depuis le découpage narratif de référence."},
-    {name:"Saga V",arcs:5,summary:"Contenu détaillé à intégrer depuis le découpage narratif de référence."},
-    {name:"Saga VI",arcs:6,summary:"Contenu détaillé à intégrer depuis le découpage narratif de référence."}
+    {name:"Saga I — Les premières traces",range:"Arcs 1 à 5"},
+    {name:"Saga II — Les vérités fragmentées",range:"Arcs 6 à 11"},
+    {name:"Saga III — Le pays qui se ferme",range:"Arcs 12 à 16"},
+    {name:"Saga IV — Les retrouvailles et la seconde quête",range:"Arcs 17 à 20"},
+    {name:"Saga V — Au-delà des frontières connues",range:"Arcs 21 à 26"},
+    {name:"Saga VI — BEYOND",range:"Arcs 27 à 30"}
   ],
   principles: [
     "Les éléments explicitement validés priment sur les propositions de travail.",
@@ -78,4 +78,38 @@ window.NEV_MANGA_DATA.secondaryCharacters = [
   {name:"Ena Rhov",role:"Responsable d’une équipe de Prospecteurs concurrente",note:"Rivale professionnelle à l’occasion."},
   {name:"Oren Tal",role:"Ancien compagnon d’expédition de Darel",note:"Conséquence durable de l’expédition de Lorn."},
   {name:"Aren Veyl",role:"L’Inconnu",note:"Connaît le mécanisme central du déclenchement de l’Éveil humain, pas l’origine ultime de L’Écho."}
+];
+
+
+window.NEV_MANGA_DATA.arcs = [
+  {n:1,title:"L’Incident de Valdéris",desc:"Présenter le quotidien d’Akira, Ren et Mira, puis l’anomalie du port, les disparitions et les conséquences pour la ville et la famille Seï."},
+  {n:2,title:"Les Premières Traces",desc:"Introduire les Prospecteurs, Darel, Maïra et Iven lors d’une première expédition en Vérénia."},
+  {n:3,title:"Au-delà des frontières",desc:"Découvrir Drakor et Therys, ses institutions scientifiques, ses acteurs industriels et une ancienne correspondance."},
+  {n:4,title:"Les Intérêts cachés",desc:"Explorer les contrats, les enjeux économiques et l’indépendance des équipes de Prospecteurs."},
+  {n:5,title:"Les Territoires oubliés",desc:"Rencontrer les habitants d’une île de Solméra et confronter mémoire locale et archives officielles."},
+  {n:6,title:"Les Héritages du passé",desc:"Explorer les archives d’Eldoria et les tensions entre recherche, conservation et contrôle documentaire."},
+  {n:7,title:"Les Frontières de l’Éveil",desc:"Étudier les conditions, les limites et les effets des capacités sans réduire les personnes à leur statut."},
+  {n:8,title:"Les Réseaux invisibles",desc:"Découvrir le Cercle, ses tendances internes et ses informations fragmentaires."},
+  {n:9,title:"Les Chemins de Ren",desc:"Suivre Ren de manière autonome, son adaptation et sa rencontre avec Ilyan."},
+  {n:10,title:"Les Chemins de Mira",desc:"Suivre le parcours indépendant de Mira, sa rencontre avec Sava et ses retrouvailles avec Ren."},
+  {n:11,title:"Le Monde en tension",desc:"Montrer les conséquences internationales des décisions locales et préparer l’arrivée à Nocterre."},
+  {n:12,title:"Les Portes de Nocterre",desc:"Entrer dans un État aux règles distinctes et découvrir la diversité de ses habitants."},
+  {n:13,title:"Soren Veyran",desc:"Introduire Soren comme protagoniste majeur, avec ses objectifs familiaux et sa méfiance."},
+  {n:14,title:"Les Ombres de Veyrsk",desc:"Enquêter sur l’OAI, ses pratiques clandestines et les personnes qui les contestent."},
+  {n:15,title:"Les Exilés",desc:"Explorer les conséquences humaines du régime et les parcours des familles séparées."},
+  {n:16,title:"L’Ouverture",desc:"Amorcer un dialogue limité entre Nocterre et Vérénia sans présenter le changement comme instantané."},
+  {n:17,title:"Les Retrouvailles",desc:"Réunir Akira, Ren et Mira et reconstruire progressivement leur relation."},
+  {n:18,title:"L’Homme qui éteint l’Éveil",desc:"Faire apparaître un individu capable d’interrompre l’accès d’Akira à sa capacité et lancer une nouvelle enquête."},
+  {n:19,title:"La Nouvelle Compagnie",desc:"Former une équipe élargie aux motivations diverses et apprendre à répartir les responsabilités."},
+  {n:20,title:"Les Fragments du secret",desc:"Rapprocher des informations issues des cinq États sans livrer prématurément les réponses."},
+  {n:21,title:"L’Affaire d’Orvane",desc:"Réexaminer l’incident secret de Solméra survenu en année 2 à partir de rapports et témoignages incomplets."},
+  {n:22,title:"Le Sépulcre",desc:"Explorer un territoire insulaire surveillé en respectant les autorisations et les stations d’expédition."},
+  {n:23,title:"Les Territoires éloignés",desc:"Développer des expéditions dans des environnements variés, avec leurs contraintes et leurs risques."},
+  {n:24,title:"Les Îles lointaines",desc:"Rencontrer des communautés insulaires et associer les habitants aux explorations."},
+  {n:25,title:"Les Abysses",desc:"Explorer les environnements maritimes profonds et leurs phénomènes encore mal compris."},
+  {n:26,title:"La Souveraineté des découvertes",desc:"Faire converger exploration, autorisations, partage des données et diplomatie."},
+  {n:27,title:"La Fracture du Cercle",desc:"Montrer les conséquences des divisions internes et les limites de l’influence du Cercle."},
+  {n:28,title:"Les Grandes convergences",desc:"Faire converger les conflits personnels, institutionnels et internationaux."},
+  {n:29,title:"Au bord de l’Inconnu",desc:"Rassembler les derniers indices et préparer la rencontre avec Aren."},
+  {n:30,title:"BEYOND",desc:"Conclure les parcours majeurs et révéler le mécanisme central de l’Éveil humain, sans expliquer l’origine ultime de L’Écho."}
 ];
