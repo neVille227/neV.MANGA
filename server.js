@@ -31,6 +31,8 @@ function send(response, status, type, body, cache = "no-cache") {
     "Cache-Control": cache,
     "X-Content-Type-Options": "nosniff",
     "Referrer-Policy": "strict-origin-when-cross-origin",
+    "X-Frame-Options": "DENY",
+    "Permissions-Policy": "camera=(), microphone=(), geolocation=()",
   });
   response.end(body);
 }
