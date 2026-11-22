@@ -33,12 +33,12 @@
       projectPanel.innerHTML = `<h3 class="panel-heading">Un monde transformé, pas effondré.</h3><p class="panel-intro">${escapeHTML(DATA.project.summary)} L’histoire se construit à travers plusieurs trajectoires autonomes, des enjeux institutionnels et des explorations.</p><div class="notice"><b>Repère de continuité.</b> ${escapeHTML(DATA.project.notes)}</div><div class="saga-grid">${DATA.sagas.map(s=>`<article class="saga-card"><span>${escapeHTML(s.range)}</span><h3>${escapeHTML(s.name)}</h3><p>Consulter les arcs de cette partie du récit.</p></article>`).join("")}</div><p class="panel-intro" style="margin-top:18px">Architecture de référence : six sagas et trente arcs. Le détail des arcs est consultable dans l’onglet « Récit & chronologie ».</p>`;
     } else if (tab === "characters") {
       projectPanel.innerHTML = `<h3 class="panel-heading">Personnages</h3><p class="panel-intro">Sept personnages principaux sont répertoriés dans la base de travail. Les portraits ne sont pas encore attachés à leurs fiches : les emplacements visuels restent volontairement neutres.</p><div class="character-grid">${DATA.characters.map((c,i)=>`<article class="character-card" role="button" tabindex="0" data-character="${i}"><div class="character-placeholder">${escapeHTML(initials(c.name))}</div><small>${escapeHTML(c.role.toUpperCase())}</small><h3>${escapeHTML(c.name)}</h3><p>${escapeHTML(c.summary)}</p><span class="view-detail">Consulter la fiche ↗</span></article>`).join("")}</div><h3 class="panel-heading" style="margin-top:40px">Personnages secondaires & entourage</h3><p class="panel-intro">Registre des autres personnages nommés dans les documents de travail. Leurs fiches détaillées et leurs visuels seront complétés après vérification de chaque information.</p><div class="character-grid">${(DATA.secondaryCharacters||[]).map((c,i)=>`<article class="character-card secondary-character" tabindex="0" data-secondary="${i}"><div class="character-placeholder">${escapeHTML(initials(c.name))}</div><small>PERSONNAGE SECONDAIRE</small><h3>${escapeHTML(c.name)}</h3><p>${escapeHTML(c.role)}</p><span class="view-detail">Voir les informations disponibles ↗</span></article>`).join("")}</div>`;
-      $(".character-card[data-character]").forEach(card => {
+      projectPanel.querySelectorAll(".character-card[data-character]").forEach(card => {
         const open=()=>showCharacter(Number(card.dataset.character));
         card.addEventListener("click",open);
         card.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();open();}});
       });
-      $(".secondary-character").forEach(card => {
+      projectPanel.querySelectorAll(".secondary-character").forEach(card => {
         const open=()=>showSecondary(Number(card.dataset.secondary));
         card.addEventListener("click",open);
         card.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();open();}});
