@@ -26,12 +26,12 @@ window.NEV_MANGA_DATA = {
     {name:"Solméra",capital:"Méridia",identity:"République maritime décentralisée, structurée autour d’une péninsule et d’archipels.",centres:"Nymara · Calyren",regions:"Méridia · Nym · Orvane · Sépulcre · Calyra",note:"Les conseils régionaux et les institutions maritimes participent à la gouvernance."}
   ],
   sagas: [
-    {name:"Saga I",arcs:1,summary:"Début du parcours d’Akira et premiers événements de Valdéris."},
-    {name:"Saga II",arcs:2,summary:"Développement des premières expéditions et des découvertes sur Néréth."},
-    {name:"Saga III",arcs:3,summary:"Élargissement des trajectoires et des enjeux entre les territoires."},
-    {name:"Saga IV",arcs:4,summary:"Convergence progressive des parcours et des tensions."},
-    {name:"Saga V",arcs:5,summary:"Approfondissement des mystères et des conséquences des événements passés."},
-    {name:"Saga VI",arcs:6,summary:"Dernière phase de convergence, révélations et résolutions personnelles et institutionnelles."}
+    {name:"Saga I",arcs:1,summary:"Contenu détaillé à intégrer depuis le découpage narratif de référence."},
+    {name:"Saga II",arcs:2,summary:"Contenu détaillé à intégrer depuis le découpage narratif de référence."},
+    {name:"Saga III",arcs:3,summary:"Contenu détaillé à intégrer depuis le découpage narratif de référence."},
+    {name:"Saga IV",arcs:4,summary:"Contenu détaillé à intégrer depuis le découpage narratif de référence."},
+    {name:"Saga V",arcs:5,summary:"Contenu détaillé à intégrer depuis le découpage narratif de référence."},
+    {name:"Saga VI",arcs:6,summary:"Contenu détaillé à intégrer depuis le découpage narratif de référence."}
   ],
   principles: [
     "Les éléments explicitement validés priment sur les propositions de travail.",
