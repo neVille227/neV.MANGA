@@ -13,3 +13,15 @@
 .arc-item h4{font:600 14px var(--display);margin:0 0 6px}
 .arc-item p{font-size:10px;line-height:1.8;color:#9da0a8;margin:0;max-width:820px}
 @media(max-width:650px){.saga-block-head{align-items:flex-start;flex-direction:column;gap:7px}.arc-item{grid-template-columns:34px 1fr;gap:10px}.arc-number{font-size:15px}}
+
+.family-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:24px}
+.family-card{border:1px solid var(--line);background:#12151b;min-width:0}
+.family-portrait{height:170px;padding:18px;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(145deg,#20232d,#171018 65%,#28151b);border-bottom:1px solid var(--line)}
+.family-portrait span,.family-portrait small{font-size:8px;letter-spacing:.14em;color:#a7a9b0}
+.family-portrait b{font:600 29px var(--display);letter-spacing:-.04em;color:#f1efea}
+.family-card-body{padding:19px}
+.family-place{font-size:8px;letter-spacing:.1em;color:#d4a04b}
+.family-card-body h3{font:600 19px var(--display);margin:8px 0}
+.family-card-body p{font-size:10px;line-height:1.75;color:#a4a6ae}
+.family-card-body ul{padding-left:16px;margin:13px 0 0;color:#d0d1d5;font-size:10px;line-height:1.9}
+@media(max-width:650px){.family-grid{grid-template-columns:1fr}.family-portrait{height:145px}}
