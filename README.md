@@ -29,11 +29,15 @@ npm start   # http://localhost:3000
 ## Hébergement
 Service web Render (Node) : commande de démarrage `npm start`, test de santé `/api/health`.
 
+## Galerie et ressources
+- `assets/` : cartes, capitales, planches des États et portraits (servis par `server.js`, WebP).
+- Le Dossier maître V4.0 n'est pas publié : il contient des éléments secrets du récit.
+
 ## Prochaines intégrations
 Les brouillons de l'espace Studio restent dans le stockage local du navigateur : ils ne sont ni sécurisés comme un espace administrateur, ni synchronisés entre appareils. Les comptes (neV.ID), rôles, base de données, téléversement partagé et publication de chapitres sont à brancher ensuite. Les portraits et planches originales ne sont pas remplacés par des images inventées. Aucun chapitre finalisé n'est présenté comme publié.
 
 ## Références éditoriales intégrées
-- PROJECT: BEYOND — Dossier de référence UNIVERS V1.1.
+- PROJECT: BEYOND — Dossier maître V4.0.
 - PROJECT: BEYOND — Dossier de consolidation V3.0.
 
 Les informations explicitement validées sont prioritaires. Les éléments à préciser ne sont pas présentés comme des faits établis.

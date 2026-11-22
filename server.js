@@ -15,6 +15,9 @@ const files = {
   "/manifest.webmanifest": ["manifest.webmanifest", "application/manifest+json; charset=utf-8"],
 };
 
+const assetTypes = { ".webp": "image/webp", ".png": "image/png", ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".svg": "image/svg+xml" };
+const assetsDir = path.join(root, "assets");
+
 async function loadContent() {
   return JSON.parse(await readFile(path.join(root, "data", "content.json"), "utf-8"));
 }
@@ -69,6 +72,19 @@ const server = createServer(async (request, response) => {
       send(response, 200, "application/xml; charset=utf-8",
         `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url><loc>${baseUrl(request)}/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>\n</urlset>\n`);
       return;
+    }
+    if (pathname.startsWith("/assets/")) {
+      let name;
+      try { name = decodeURIComponent(pathname.slice(8)); } catch { name = ""; }
+      const type = assetTypes[path.extname(name).toLowerCase()];
+      const full = path.join(assetsDir, name);
+      if (type && !name.includes("..") && full.startsWith(assetsDir + path.sep)) {
+        try {
+          const body = await readFile(full);
+          send(response, 200, type, request.method === "HEAD" ? undefined : body, "public, max-age=86400");
+          return;
+        } catch { /* fichier absent : 404 ci-dessous */ }
+      }
     }
     const entry = files[pathname];
     if (entry) {
