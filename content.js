@@ -41,3 +41,41 @@ window.NEV_MANGA_DATA = {
     "Une hypothèse ne devient pas un fait établi sans validation."
   ]
 };
+
+window.NEV_MANGA_DATA.secondaryCharacters = [
+  {name:"Tarek Seï",role:"Père d’Akira et de Noa",note:"Entourage familial de Valdéris."},
+  {name:"Éliane Seï",role:"Mère d’Akira et de Noa",note:"Entourage familial de Valdéris."},
+  {name:"Noa Seï",role:"Petite sœur d’Akira",note:"Ancrage affectif et vie familiale."},
+  {name:"Eron Tavian",role:"Père de Ren",note:"Entourage familial de Ren."},
+  {name:"Selma Tavian",role:"Mère de Ren",note:"Soutien et mémoire de la disparition."},
+  {name:"Nilo Tavian",role:"Frère cadet de Ren",note:"Relation fraternelle."},
+  {name:"Yoren Celys",role:"Père de Mira",note:"Infrastructures et cartographie urbaine."},
+  {name:"Amara Celys",role:"Mère de Mira",note:"Enseignement et programmes éducatifs."},
+  {name:"Lina Celys",role:"Cousine de Mira",note:"Lien proche, presque fraternel."},
+  {name:"Lysa Veyran",role:"Mère de Soren",note:"Enjeu central de la protection familiale."},
+  {name:"Avel Veyran",role:"Sœur aînée de Soren",note:"Vit à l’étranger."},
+  {name:"Darven Veyran",role:"Oncle de Soren",note:"Vit à l’étranger, séparément d’Avel."},
+  {name:"Maren Vossan",role:"Père de Darel",note:"Mémoire du travail portuaire."},
+  {name:"Iria Vossan",role:"Mère de Darel",note:"Ancrage familial et administratif."},
+  {name:"Léna Vossan",role:"Sœur cadette de Darel",note:"Lien familial hors expédition."},
+  {name:"Joran Delys",role:"Père de Maïra",note:"Équipements et compétences pratiques."},
+  {name:"Sélia Delys",role:"Mère de Maïra",note:"Formation et exigence."},
+  {name:"Milo Delys",role:"Frère cadet de Maïra",note:"Lien familial et regard extérieur sur son ambition."},
+  {name:"Elias Norell",role:"Père d’Iven",note:"Ingénierie des structures."},
+  {name:"Nadine Norell",role:"Mère d’Iven",note:"Archives scientifiques."},
+  {name:"Lenn Norell",role:"Frère aîné d’Iven",note:"Contact avec les institutions techniques."},
+  {name:"Néria Valt",role:"Chercheuse à Therys",note:"Compare des archives de manifestations."},
+  {name:"Odran Kess",role:"Représentant d’un consortium industriel",note:"Négociations et contrats."},
+  {name:"Sélène Orva",role:"Médiatrice de Solméra",note:"Défend l’autonomie locale et les habitants."},
+  {name:"Tévan Rhos",role:"Conservateur local du patrimoine",note:"Recoupe archives et témoignages."},
+  {name:"Edris Vael",role:"Archiviste d’Eldoria",note:"Veille à l’intégrité documentaire."},
+  {name:"Liora Sen",role:"Conservatrice du patrimoine",note:"Préservation et circulation des documents."},
+  {name:"Marek Ilvan",role:"Conseiller auprès des Éveillés",note:"Les capacités ne définissent pas la valeur d’une personne."},
+  {name:"Tess Arven",role:"Jeune Éveillée",note:"Refuse d’être réduite à son statut."},
+  {name:"Varek Sol",role:"Intermédiaire indépendant",note:"Courtier en information, sans loyauté exclusive connue."},
+  {name:"Ilyan",role:"Compagnon de route de Ren",note:"Participe à son adaptation et à son parcours."},
+  {name:"Sava",role:"Compagnon de route de Mira",note:"Compétences relationnelles et négociation locale."},
+  {name:"Ena Rhov",role:"Responsable d’une équipe de Prospecteurs concurrente",note:"Rivale professionnelle à l’occasion."},
+  {name:"Oren Tal",role:"Ancien compagnon d’expédition de Darel",note:"Conséquence durable de l’expédition de Lorn."},
+  {name:"Aren Veyl",role:"L’Inconnu",note:"Connaît le mécanisme central du déclenchement de l’Éveil humain, pas l’origine ultime de L’Écho."}
+];
