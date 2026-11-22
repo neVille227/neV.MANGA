@@ -87,8 +87,9 @@
     if(("project beyond "+DATA.project.summary).toLowerCase().includes(q))hits.push(["PROJECT: BEYOND","Univers n°001","#beyond"]);
     DATA.characters.forEach((c,i)=>{if((c.name+" "+c.summary+" "+c.ability).toLowerCase().includes(q))hits.push([c.name,"Personnage","#beyond",i]);});
     DATA.states.forEach(s=>{if((s.name+" "+s.identity+" "+s.capital).toLowerCase().includes(q))hits.push([s.name,"État de Néréth","#beyond"]);});
+    (DATA.secondaryCharacters||[]).forEach((c,i)=>{if((c.name+" "+c.role+" "+c.note).toLowerCase().includes(q))hits.push([c.name,"Personnage secondaire","#beyond", "s"+i]);});
     results.innerHTML=hits.length?hits.map(h=>`<a class="search-result" href="${h[2]}" data-hit="${h[3]??""}"><b>${escapeHTML(h[0])}</b><span> — ${escapeHTML(h[1])}</span></a>`).join(""):"<p>Aucun résultat.</p>";
-    $$(".search-result",results).forEach(a=>a.addEventListener("click",()=>{closeSearch();if(a.dataset.hit!==""){renderTab("characters");setTimeout(()=>showCharacter(Number(a.dataset.hit)),0);}else renderTab("overview");}));
+    $$(".search-result",results).forEach(a=>a.addEventListener("click",()=>{closeSearch();if(a.dataset.hit!==""){renderTab("characters");setTimeout(()=>{const value=a.dataset.hit;if(value.startsWith("s"))showSecondary(Number(value.slice(1)));else showCharacter(Number(value));},0);}else renderTab("overview");}));
   });
 
   const STORAGE_KEY="nev-manga-local-drafts-v1";
