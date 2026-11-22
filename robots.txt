@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nev-manga.onrender.com/sitemap.xml
